@@ -72,7 +72,15 @@ th {
 .edit-entry:hover {
 	opacity: .8;
 }
-	
+.alignleft {
+	float: left;
+  	margin: .5em 20px .5em 0;
+}
+.alignright {
+  	float: right;
+  	margin: .5em 0 .5em 20px;
+}
+
 #container {
     float: right;
     padding-bottom: 50px;
