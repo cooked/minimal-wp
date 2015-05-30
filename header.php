@@ -59,13 +59,13 @@
 						<li>Search
 							<ul class="">
 								<?php get_search_form(); ?>
-							<ul>
+							</ul>
 						</li>
 					</ul>
 				</nav>
 				<nav class="primary_nav_wrap">
 					<ul class="nav_about">
-						<li><a href="http://www.stefanocottafavi.com/about/">?</a>
+						<li><a href="<?php site_url(); ?>/about/">?</a>
 						</li>
 					</ul>
 				</nav>
