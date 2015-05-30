@@ -11,16 +11,19 @@ function minimal_wp_setup() {
 			'main-menu' => __ ( 'Main Menu', 'minimal_wp' ) 
 	) );
 }
+
 add_action ( 'wp_enqueue_scripts', 'minimal_wp_load_scripts' );
 function minimal_wp_load_scripts() {
 	wp_enqueue_script ( 'jquery' );
 }
+
 add_action ( 'comment_form_before', 'minimal_wp_enqueue_comment_reply_script' );
 function minimal_wp_enqueue_comment_reply_script() {
 	if (get_option ( 'thread_comments' )) {
 		wp_enqueue_script ( 'comment-reply' );
 	}
 }
+
 add_filter ( 'the_title', 'minimal_wp_title' );
 function minimal_wp_title($title) {
 	if ($title == '') {
@@ -29,10 +32,12 @@ function minimal_wp_title($title) {
 		return $title;
 	}
 }
+
 add_filter ( 'wp_title', 'minimal_wp_filter_wp_title' );
 function minimal_wp_filter_wp_title($title) {
 	return $title . esc_attr ( get_bloginfo ( 'name' ) );
 }
+
 add_action ( 'widgets_init', 'minimal_wp_widgets_init' );
 function minimal_wp_widgets_init() {
 	register_sidebar ( array (
@@ -70,7 +75,7 @@ function minimal_wp_comments_number($count) {
  * @param  array $r Existing request arguments
  * @param  string $url Request URL
  * @return array Amended request arguments
- */
+
 function ea_dont_update_theme( $r, $url ) {
 	if ( 0 !== strpos( $url, 'https://api.wordpress.org/themes/update-check/1.1/' ) )
  		return $r; // Not a theme update request. Bail immediately.
@@ -81,20 +86,21 @@ function ea_dont_update_theme( $r, $url ) {
  	return $r;
  }
  add_filter( 'http_request_args', 'ea_dont_update_theme', 5, 2 );
-
+*/
  
  /**
   * Snippet Name: Add page break button to tinyMCE editor bar
   * Snippet URL: http://www.wpcustoms.net/snippets/add-page-break-button-to-tinymce-editor-bar/
   */
- function wpc_nextpage_tinyMCE($mce_buttons) {
+add_filter('mce_buttons','wpc_nextpage_tinyMCE');
+function wpc_nextpage_tinyMCE($mce_buttons) {
  	$pos = array_search('wp_more',$mce_buttons,true);
  	if ($pos !== false) {
  		$tmp_buttons = array_slice($mce_buttons, 0, $pos+1);
  		$tmp_buttons[] = 'wp_page';
  		$mce_buttons = array_merge($tmp_buttons, array_slice($mce_buttons, $pos+1));
  	}
- 	return $mce_buttons;
- }
- add_filter('mce_buttons','wpc_nextpage_tinyMCE');
+	return $mce_buttons;
+}
+ 
  
