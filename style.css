@@ -325,10 +325,15 @@ fieldset {
 }
 
 .primary_nav_wrap #searchsubmit {
-	height: 17px;
+	/*height: 17px;
     margin: 4px 0 0 10px;
     vertical-align: top;
-    width: 17px;
+    width: 17px;*/
+   margin: 4px 0 0 5px;
+   border: none;
+   background: #FFFFFF;
+   border: 1px solid #d2d2d2;
+   border-radius: 5px;
 }
 
 /* comments */
