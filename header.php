@@ -51,7 +51,7 @@
 					<ul>
 						<li>Search
 							<ul class="">
-								<?php get_search_form(); ?>
+								<li><?php get_search_form(); ?></li>
 							</ul>
 						</li>
 					</ul>
