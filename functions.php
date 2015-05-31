@@ -1,5 +1,6 @@
 <?php
 
+// see https://themes.trac.wordpress.org/ticket/20672
 add_action( 'widgets_init', 'minimal_wp_widget' );
 function minimal_wp_widget(){
 	register_sidebar( array(
