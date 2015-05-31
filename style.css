@@ -12,7 +12,6 @@
 
  Minimal WordPress Theme by Stefano Cottafavi, 2015
  Minimal is distributed under the terms of the GNU GPL
- Minimal GitHub
  */
 
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
@@ -383,10 +382,6 @@ fieldset {
 }
 
 .primary_nav_wrap #searchsubmit {
-	/*height: 17px;
-	 margin: 4px 0 0 10px;
-	 vertical-align: top;
-	 width: 17px;*/
 	margin: 4px 0 0 5px;
 	border: none;
 	background: #FFFFFF;
