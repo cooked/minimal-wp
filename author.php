@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<section id="content" role="main">
+<div id="content" role="main">
 <header class="header">
 <?php the_post(); ?>
 <h1 class="entry-title author"><?php _e( 'Author Archives', 'minimal_wp' ); ?>: <?php the_author_link(); ?></h1>
@@ -10,5 +10,5 @@
 <?php get_template_part( 'entry' ); ?>
 <?php endwhile; ?>
 <?php get_template_part( 'nav', 'below' ); ?>
-</section>
+</div>
 <?php get_footer(); ?>
