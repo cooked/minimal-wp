@@ -5,9 +5,6 @@ function minimal_wp_setup() {
 	load_theme_textdomain( 'minimal_wp', get_template_directory () . '/languages' );
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'post-thumbnails' );
-	add_theme_support( "title-tag" );
-	add_theme_support( "custom-header" );
-	add_theme_support( "custom-background" );
 	add_editor_style('style.css'); // add own stylesheet to WordPress Editor
 	global $content_width;
 	if (! isset ( $content_width ))
