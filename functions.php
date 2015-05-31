@@ -3,6 +3,9 @@ add_action ( 'after_setup_theme', 'minimal_wp_setup' );
 function minimal_wp_setup() {
 	load_theme_textdomain( 'minimal_wp', get_template_directory () . '/languages' );
 	add_theme_support( 'automatic-feed-links' );
+	add_theme_support( "title-tag" );
+	add_theme_support( "custom-header" );
+	add_theme_support( "custom-background" );
 	add_theme_support( 'post-thumbnails' );
 	add_editor_style('style.css'); // add own stylesheet to WordPress Editor
 	global $content_width;
@@ -39,17 +42,6 @@ function minimal_wp_filter_wp_title($title) {
 	return $title . esc_attr ( get_bloginfo ( 'name' ) );
 }
 
-add_action ( 'widgets_init', 'minimal_wp_widgets_init' );
-function minimal_wp_widgets_init() {
-	register_sidebar ( array (
-			'name' => __ ( 'Sidebar Widget Area', 'minimal_wp' ),
-			'id' => 'primary-widget-area',
-			'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-			'after_widget' => "</li>",
-			'before_title' => '<h3 class="widget-title">',
-			'after_title' => '</h3>' 
-	) );
-}
 function minimal_wp_custom_pings($comment) {
 	$GLOBALS ['comment'] = $comment;
 	?>
