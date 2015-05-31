@@ -71,6 +71,10 @@ th {
 	float: right;
 	margin: .5em 0 .5em 1em;
 }
+.alignnone {
+	max-width: 100%;
+	height: auto;
+}
 .wp-post-image {
 	display: block;
 	float: left;
@@ -92,9 +96,11 @@ th {
 }
 .wp-caption.alignleft {
 	margin-right: 20px;
+	width: auto !important;
 }
 .wp-caption.alignright {
 	margin-left: 20px;
+	width: auto !important;
 }
 .wp-caption.alignleft img,
 .wp-caption.alignright img,
@@ -108,8 +114,9 @@ th {
 }
 
 p.wp-caption-text {
-  padding-bottom: .3em;
-  color: #888;
+	margin-bottom: 0;
+  	padding-bottom: .3em;
+  	color: #888;
 }
 
 #container {

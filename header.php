@@ -7,13 +7,6 @@
 <title><?php wp_title( ' | ', true, 'right' ); ?></title>
 <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
 <?php wp_head(); ?>
-
-<script language="javascript" type="text/javascript">
-  function resizeIframe(obj) {
-    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-  }
-</script>
-
 </head>
 
 <body <?php body_class(); ?>>
@@ -63,12 +56,9 @@
 						</li>
 					</ul>
 				</nav>
-				<nav class="primary_nav_wrap">
-					<ul class="nav_about">
-						<li><a href="<?php site_url(); ?>/about/">?</a>
-						</li>
-					</ul>
-				</nav>
+				<?php if(get_page_by_title('About')) : ?>
+					<nav class="primary_nav_wrap"><ul class="nav_about"><li><a href="<?php site_url() ?> /about/">?</a></li></ul></nav>
+				<?php endif;?>
 			</nav>
 
 		</header>
