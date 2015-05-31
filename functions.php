@@ -5,7 +5,7 @@ add_action( 'widgets_init', 'minimal_wp_widget' );
 function minimal_wp_widget(){
 	register_sidebar( array(
 			'name'          => __( 'Primary Sidebar', 'minimal_wp' ),
-			'id'            => 'sidebar-1',
+			'id'            => 'primary-widget-area',
 			'description'   => __( 'sidebar', 'minimal_wp' ),
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</aside>',
