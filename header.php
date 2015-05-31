@@ -56,8 +56,10 @@
 						</li>
 					</ul>
 				</nav>
-				<?php if(get_page_by_title('About')) : ?>
-					<nav class="primary_nav_wrap"><ul class="nav_about"><li><a href="<?php site_url() ?> /about/">?</a></li></ul></nav>
+				<?php 
+				// see https://wordpress.org/support/topic/find-if-page-exists
+				if(get_page_by_title('About')) : ?>
+					<nav class="primary_nav_wrap"><ul class="nav_about"><li><a href="<?php site_url() ?>/about/">?</a></li></ul></nav>
 				<?php endif;?>
 			</nav>
 
