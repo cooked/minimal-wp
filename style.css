@@ -13,15 +13,12 @@
  Minimal WordPress Theme by Stefano Cottafavi, 2015
  Minimal is distributed under the terms of the GNU GPL
  */
-
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
-
 body {
 	padding: 50px;
 	font: 14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #777;
 }
-
 table {
 	border-collapse: collapse;
 	width: 100%;
@@ -38,14 +35,13 @@ dt {
 th {
 	color: #444;
 }
-
+.sticky, .gallery-caption, .bypostauthor, .aligncenter {}
 .navigation {
 	display: none;
 }
 .author {
 	display: none;
 }
-
 .entry-links {
 	text-align: right;
 }
@@ -111,13 +107,11 @@ th {
   padding: 0;
   margin: 0;
 }
-
 p.wp-caption-text {
 	margin-bottom: 0;
   	padding-bottom: .3em;
   	color: #888;
 }
-
 #container {
 	float: right;
 	padding-bottom: 50px;
@@ -132,16 +126,12 @@ p.wp-caption-text {
 	position: fixed;
 	width: 270px;
 }
-
 h1, h2, h3, h4, h5, h6 {
 	color: #222;
 	margin: 0 0 20px;
 }
-
 h1, h2, h3 {
-	/*line-height:1.1;*/
 }
-
 p, ul, ol, table, pre, dl {
 	margin: 0 0 18px;
 }
@@ -170,45 +160,37 @@ a {
 a:hover {
 	color: #069;
 }
-
 a small {
 	font-size: 11px;
 	color: #777;
 	margin-top: -0.6em;
 	display: block;
 }
-
 a:hover small {
 	color: #777;
 }
-
 #site-title a, h1 a {
 	font-size: 28px;
 	color: #222;
 	font-weight: 600;
 }
-
 h2 {
 	margin: 0 0 10px 0;
 }
-
 h2 a {
 	font-size: 28px;
 	color: #222;
 	font-weight: 600;
 }
-
 #wrapper {
 	margin: 0 auto;
 	width: 860px;
 }
-
 header#header {
 	float: left;
 	position: fixed;
 	width: 270px;
 }
-
 /* archive */
 body.archive header {
 	float: none;
@@ -222,7 +204,6 @@ body.archive h1.entry-title {
 body.archive h2.entry-title a {
 	font-size: 20px;
 }
-
 /* single */
 .single article h2 {
 	display: none;
@@ -269,7 +250,6 @@ article footer {
 .single article .wp-post-image {
 	display: none;
 }
-
 article img {
 	max-width: 100%;
 	height: auto;
@@ -278,17 +258,14 @@ article ul {
 	padding-left: 25px;
 }
 /* end article */
-
 header a.post-editlink {
 	position: relative;
 	top: 0;
 }
-
 /* nav menu */
 .primary_nav_wrap {
 	margin: 15px 0 0 -8px;
 }
-
 .primary_nav_wrap ul {
 	list-style: none;
 	position: relative;
@@ -296,12 +273,10 @@ header a.post-editlink {
 	margin: 0;
 	padding: 0;
 }
-
 .primary_nav_wrap ul a {
 	color: #777;
 	text-decoration: none;
 }
-
 .primary_nav_wrap ul li {
 	position: relative;
 	float: left;
@@ -326,7 +301,6 @@ header a.post-editlink {
 	border-top-right-radius: .3em;
 	cursor: pointer;
 }
-
 .primary_nav_wrap ul ul {
 	background: #f6f6f6;
 	border-top-right-radius: .3em;
@@ -343,16 +317,13 @@ header a.post-editlink {
 	margin-left: -179px;
 	width: 255px;
 }
-
 .primary_nav_wrap ul ul li {
 	float: none;
 	padding-bottom: 5px;
 }
-
 .primary_nav_wrap ul ul a {
 	padding: 0px;
 }
-
 .primary_nav_wrap ul ul ul {
 	top: 0;
 	left: 100%;
@@ -360,11 +331,9 @@ header a.post-editlink {
 .primary_nav_wrap ul.children {
 	border-radius: 0;
 }
-
 .primary_nav_wrap ul li:hover > ul {
 	display: block;
 }
-
 .primary_nav_wrap #searchform {
 	position: relative;
 }
@@ -380,7 +349,6 @@ fieldset {
 	width: 190px;
 	padding: 3px;
 }
-
 .primary_nav_wrap #searchsubmit {
 	margin: 4px 0 0 5px;
 	border: none;
@@ -388,7 +356,6 @@ fieldset {
 	border: 1px solid #d2d2d2;
 	border-radius: 5px;
 }
-
 /* comments */
 .comments ul {
 	list-style: none;
@@ -415,15 +382,12 @@ fieldset {
 	margin-bottom: 20px;
 	float: right;
 }
-
 #respond {
 	margin: 30px 0 0 0;
 }
-
 #form-allowed-tags {
 	font-size: 11px;
 }
-
 label[for=comment] {
 	display: none;
 }
@@ -433,7 +397,6 @@ textarea#comment {
 	min-width: 100%;
 	border: 1px solid #d2d2d2;
 }
-
 #commentform .form-submit {
 	position: relative;
 	float: right;
@@ -446,7 +409,6 @@ textarea#comment {
 	border-radius: 5px;
 	padding: 2px;
 }
-
 /* plugins hacks*/
 .justified-image-grid {
 	margin-bottom: 20px !important;
