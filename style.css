@@ -13,6 +13,19 @@
  Minimal is distributed under the terms of the GNU GPL
  */
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+
+@font-face {
+  font-family: "CreativeCommons";
+  src: url('fonts/cc-icons.ttf') format("truetype");
+}
+.license { 
+	font-size: 20px;
+	letter-spacing: 2px;
+	font-family: "CreativeCommons", sans-serif;
+	float: left;
+	margin-right: 5px;
+	line-height: 1.1;
+}
 body {
 	padding: 50px;
 	font: 14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
