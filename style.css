@@ -130,8 +130,6 @@ h1, h2, h3, h4, h5, h6 {
 	color: #222;
 	margin: 0 0 20px;
 }
-h1, h2, h3 {
-}
 p, ul, ol, table, pre, dl {
 	margin: 0 0 18px;
 }
@@ -169,7 +167,7 @@ a small {
 a:hover small {
 	color: #777;
 }
-#site-title a, h1 a {
+h1, h1 a {
 	font-size: 28px;
 	color: #222;
 	font-weight: 600;

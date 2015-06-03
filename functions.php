@@ -16,6 +16,15 @@ function minimal_wp_setup() {
 	) );
 }
 
+/**
+ * Theme Option Page Example
+ */
+function pu_theme_menu()
+{
+	add_theme_page( 'Theme Option', 'Theme Options', 'manage_options', 'pu_theme_options.php', 'pu_theme_page');
+}
+add_action('admin_menu', 'pu_theme_menu');
+
 add_action ( 'wp_enqueue_scripts', 'minimal_wp_load_scripts' );
 function minimal_wp_load_scripts() {
 	wp_enqueue_script ( 'jquery' );
@@ -87,5 +96,4 @@ function wpc_nextpage_tinyMCE($mce_buttons) {
  	}
 	return $mce_buttons;
 }
- 
  

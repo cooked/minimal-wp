@@ -13,10 +13,10 @@
 	<div id="wrapper" class="hfeed">
 		<header id="header" role="banner">
 			<section id="branding">
-				<div id="site-title"><?php if ( ! is_singular() ) { echo '<h1>'; } ?><a
+				<div id="site-title"><h1><a
 						href="<?php echo esc_url( home_url( '/' ) ); ?>"
 						title="<?php esc_attr_e( get_bloginfo( 'name' ), 'minimal_wp' ); ?>"
-						rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a><?php if ( ! is_singular() ) { echo '</h1>'; } ?></div>
+						rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a></h1></div>
 				<div id="site-description"><?php bloginfo( 'description' ); ?></div>
 			</section>
 
