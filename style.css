@@ -12,7 +12,8 @@
  Minimal WordPress Theme by Stefano Cottafavi, 2015
  Minimal is distributed under the terms of the GNU GPL
  */
-@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+/*@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);*/
+
 
 @font-face {
   font-family: "CreativeCommons";
