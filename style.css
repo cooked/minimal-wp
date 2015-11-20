@@ -14,7 +14,8 @@
 
 @font-face {
   font-family: "CreativeCommons";
-  src: url('fonts/cc-icons.ttf') format("truetype");
+  /*src: url('fonts/cc-icons.ttf') format("truetype");*/
+  src: url('http://mirrors.creativecommons.org/presskit/cc-icons.ttf') format("truetype");
 }
 .license { 
 	font-size: 20px;
