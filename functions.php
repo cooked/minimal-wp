@@ -29,17 +29,20 @@ function minimal_wp_enqueue_google_font() {
 }
 add_action( 'wp_enqueue_scripts', 'minimal_wp_enqueue_google_font' );
 
+/**
+ * Enqueue comments reply script
+ */
+function minimal_wp_enqueue_comments_reply() {
+	if( get_option( 'thread_comments' ) )  {
+		wp_enqueue_script( 'comment-reply' );
+	}
+}
+add_action( 'comment_form_before', 'minimal_wp_enqueue_comments_reply' );
+
 function minimal_wp_load_scripts() {
 	wp_enqueue_script ( 'jquery' );
 }
 add_action ( 'wp_enqueue_scripts', 'minimal_wp_load_scripts' );
-
-add_action ( 'comment_form_before', 'minimal_wp_enqueue_comment_reply_script' );
-function minimal_wp_enqueue_comment_reply_script() {
-	if (get_option ( 'thread_comments' )) {
-		wp_enqueue_script ( 'comment-reply' );
-	}
-}
 
 add_filter ( 'the_title', 'minimal_wp_title' );
 function minimal_wp_title($title) {

@@ -1,7 +1,6 @@
 /*
  Theme Name: Minimal WP
  Author: Stefano Cottafavi
- Author URI: http://www.stefanocottafavi.com
  Description: GitHub-inspired minimal theme
  Version: 1.0.0
  License: GNU General Public License
@@ -12,8 +11,6 @@
  Minimal WordPress Theme by Stefano Cottafavi, 2015
  Minimal is distributed under the terms of the GNU GPL
  */
-/*@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);*/
-
 
 @font-face {
   font-family: "CreativeCommons";
