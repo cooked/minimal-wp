@@ -1,5 +1,4 @@
 <?php
-add_action ( 'after_setup_theme', 'minimal_wp_setup' );
 function minimal_wp_setup() {
 	load_theme_textdomain( 'minimal_wp', get_template_directory () . '/languages' );
 	add_theme_support( 'automatic-feed-links' );
@@ -15,23 +14,17 @@ function minimal_wp_setup() {
 			'main-menu' => __ ( 'Main Menu', 'minimal_wp' ) 
 	) );
 }
+add_action ( 'after_setup_theme', 'minimal_wp_setup' );
 
-/**
- * Enqueue Google Fonts.
- */
 function minimal_wp_enqueue_google_font() {
 	$query_args = array(
 			'family' => 'Lato:300,700,300italic,700italic'
 	);
-
 	wp_register_style( 'google-fonts', add_query_arg( $query_args, "//fonts.googleapis.com/css" ), array(), null );
 	wp_enqueue_style( 'google-fonts' );
 }
 add_action( 'wp_enqueue_scripts', 'minimal_wp_enqueue_google_font' );
 
-/**
- * Enqueue comments reply script
- */
 function minimal_wp_enqueue_comments_reply() {
 	if( get_option( 'thread_comments' ) )  {
 		wp_enqueue_script( 'comment-reply' );
@@ -42,9 +35,8 @@ add_action( 'comment_form_before', 'minimal_wp_enqueue_comments_reply' );
 function minimal_wp_load_scripts() {
 	wp_enqueue_script ( 'jquery' );
 }
-add_action ( 'wp_enqueue_scripts', 'minimal_wp_load_scripts' );
+add_action( 'wp_enqueue_scripts', 'minimal_wp_load_scripts' );
 
-add_filter ( 'the_title', 'minimal_wp_title' );
 function minimal_wp_title($title) {
 	if ($title == '') {
 		return '&rarr;';
@@ -52,14 +44,13 @@ function minimal_wp_title($title) {
 		return $title;
 	}
 }
+add_filter( 'the_title', 'minimal_wp_title' );
 
-add_filter ( 'wp_title', 'minimal_wp_filter_wp_title' );
-function minimal_wp_filter_wp_title($title) {
+function minimal_wp_filter_title($title) {
 	return $title . esc_attr ( get_bloginfo ( 'name' ) );
 }
+add_filter ( 'wp_title', 'minimal_wp_filter_title' );
 
-// see https://themes.trac.wordpress.org/ticket/20672
-add_action( 'widgets_init', 'minimal_wp_widget' );
 function minimal_wp_widget() {
 	register_sidebar( array(
 			'name' 			=> __( 'Sidebar Widget Area', 'minimal_wp' ),
@@ -71,13 +62,15 @@ function minimal_wp_widget() {
 			'after_title' 	=> '</h3>' 
 	) );
 }
+add_action( 'widgets_init', 'minimal_wp_widget' );
+
 function minimal_wp_custom_pings($comment) {
 	$GLOBALS ['comment'] = $comment;
 	?>
 <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>"><?php echo comment_author_link(); ?></li>
 <?php
 }
-add_filter ( 'get_comments_number', 'minimal_wp_comments_number' );
+
 function minimal_wp_comments_number($count) {
 	if (! is_admin ()) {
 		global $id;
@@ -87,4 +80,5 @@ function minimal_wp_comments_number($count) {
 		return $count;
 	}
 }
+add_filter ( 'get_comments_number', 'minimal_wp_comments_number' );
  

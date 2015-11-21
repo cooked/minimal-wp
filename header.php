@@ -14,7 +14,7 @@
 			<section id="branding">
 				<div id="site-title"><h1><a
 						href="<?php echo esc_url( home_url( '/' ) ); ?>"
-						title="<?php esc_attr_e( get_bloginfo( 'name' ), 'minimal_wp' ); ?>"
+						title="<?php esc_attr_e( get_bloginfo( 'name' ), 'minimal-wp' ); ?>"
 						rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a></h1></div>
 				<div id="site-description"><?php bloginfo( 'description' ); ?></div>
 			</section>
@@ -23,9 +23,9 @@
 				<nav class="primary_nav_wrap">
 					<ul>
 						<?php
-							$variable = wp_list_categories('echo=0&orderby=name');
-							$variable = preg_replace('~\((\d+)\)(?=\s*+<)~', '<div class="num">$1</num>', $variable);
-							echo $variable;
+							$minimal_wp_variable = wp_list_categories('echo=0&orderby=name');
+							$minimal_wp_variable = preg_replace('~\((\d+)\)(?=\s*+<)~', '<div class="num">$1</num>', $variable);
+							echo $minimal_wp_variable;
 						?>
 					</ul>
 				</nav>
@@ -56,7 +56,6 @@
 					</ul>
 				</nav>
 				<?php 
-				// see https://wordpress.org/support/topic/find-if-page-exists
 				if(get_page_by_title('About')) : ?>
 					<nav class="primary_nav_wrap"><ul class="nav_about"><li><a href="<?php site_url() ?>/about/">?</a></li></ul></nav>
 				<?php endif;?>

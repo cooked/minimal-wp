@@ -3,8 +3,8 @@
 <footer id="footer" role="contentinfo">
 <div id="copyright">
 <?php 
-	$options = get_option( 'minimal_wp_theme_options' );
-	echo sprintf( __( '%1$s %2$s %3$s.', 'minimal_wp' ), $options['pu_textbox'] , date( 'Y' ),esc_html( get_bloginfo( 'name' ) )  ); ?>
+	$minimal_wp_options = get_option( 'minimal_wp_theme_options' );
+	echo sprintf( __( '%1$s %2$s %3$s.', 'minimal_wp' ), $minimal_wp_options['minimal_wp_textbox'] , date( 'Y' ),esc_html( get_bloginfo( 'name' ) )  ); ?>
 </div>
 </footer>
 </div>
