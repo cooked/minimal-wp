@@ -24,7 +24,7 @@
 					<ul>
 						<?php
 							$minimal_wp_variable = wp_list_categories('echo=0&orderby=name');
-							$minimal_wp_variable = preg_replace('~\((\d+)\)(?=\s*+<)~', '<div class="num">$1</num>', $variable);
+							$minimal_wp_variable = preg_replace('~\((\d+)\)(?=\s*+<)~', '<div class="num">$1</num>', $minimal_wp_variable);
 							echo $minimal_wp_variable;
 						?>
 					</ul>
