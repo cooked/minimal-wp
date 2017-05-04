@@ -19,9 +19,11 @@
 				<div id="site-description"><?php bloginfo( 'description' ); ?></div>
 			</section>
 			
-			<div id="sidebar-1">
+			
+			
+			
 				<?php get_sidebar('sidebar-1'); ?>
-			</div>
+		
 			
 		</header>
 		<div id="container">
