@@ -51,7 +51,7 @@ function minimal_wp_filter_title($title) {
 }
 add_filter ( 'wp_title', 'minimal_wp_filter_title' );
 
-function minimal_wp_widget() {
+function minimal_wp_widgets_init() {
 	register_sidebar( array(
 			'name' 			=> __( 'Sidebar Widget Area', 'minimal_wp' ),
 			'id' 			=> 'sidebar-1',
@@ -62,7 +62,7 @@ function minimal_wp_widget() {
 			'after_title' 	=> '</h3>' 
 	) );
 }
-add_action( 'widgets_init', 'minimal_wp_widget' );
+add_action( 'widgets_init', 'minimal_wp_widgets_init' );
 
 function minimal_wp_custom_pings($comment) {
 	$GLOBALS ['comment'] = $comment;
