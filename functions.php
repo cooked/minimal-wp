@@ -54,7 +54,7 @@ add_filter ( 'wp_title', 'minimal_wp_filter_title' );
 function minimal_wp_widget() {
 	register_sidebar( array(
 			'name' 			=> __( 'Sidebar Widget Area', 'minimal_wp' ),
-			'id' 			=> 'primary-widget-area',
+			'id' 			=> 'sidebar-1',
 			'description'   => __( 'sidebar', 'minimal_wp' ),
 			'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
 			'after_widget' 	=> "</li>",

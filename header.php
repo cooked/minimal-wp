@@ -18,7 +18,7 @@
 						rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a></h1></div>
 				<div id="site-description"><?php bloginfo( 'description' ); ?></div>
 			</section>
-
+			
 			<nav id="menu" role="navigation">
 				<nav class="primary_nav_wrap">
 					<ul>
@@ -60,6 +60,10 @@
 					<nav class="primary_nav_wrap"><ul class="nav_about"><li><a href="<?php site_url() ?>/about/">?</a></li></ul></nav>
 				<?php endif;?>
 			</nav>
-
+			
+			<div id="sidebar1">
+				<?php get_sidebar('sidebar-1'); ?>
+			</div>
+			
 		</header>
 		<div id="container">
