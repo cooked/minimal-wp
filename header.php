@@ -61,8 +61,8 @@
 				<?php endif;?>
 			</nav>
 			
-			<div id="sidebar1">
-				<?php get_sidebar('sidebar-primary'); ?>
+			<div id="sidebar-11">
+				<?php get_sidebar('sidebar-1'); ?>
 			</div>
 			
 		</header>
