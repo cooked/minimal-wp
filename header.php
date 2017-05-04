@@ -62,6 +62,7 @@
 			</nav>
 			
 			<div id="sidebar1">
+			
 				<?php get_sidebar('sidebar-1'); ?>
 			</div>
 			
