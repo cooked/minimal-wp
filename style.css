@@ -270,11 +270,11 @@ header a.post-editlink {
 }
 
 /* nav menu */
-.sidebar,
+#sidebar,
 .primary_nav_wrap {
 	margin: 15px 0 0 -8px;
 }
-.sidebar ul,
+#sidebar ul,
 .primary_nav_wrap ul {
 	list-style: none;
 	position: relative;
