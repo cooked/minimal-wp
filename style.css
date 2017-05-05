@@ -274,7 +274,9 @@ header a.post-editlink {
 .primary_nav_wrap {
 	margin: 15px 0 0 -8px;
 }
-#sidebar ul,
+#sidebar ul {
+	list-style: none;
+}
 .primary_nav_wrap ul {
 	list-style: none;
 	position: relative;
