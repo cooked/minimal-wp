@@ -268,45 +268,45 @@ header a.post-editlink {
 }
 
 /* nav menu */
-.sidebar {
+.primary_nav_wrap {
 	margin: 15px 0 0 -8px;
 }
-.sidebar ul {
+.primary_nav_wrap ul {
 	list-style: none;
 	position: relative;
 	float: left;
 	margin: 0;
 	padding: 0;
 }
-.sidebar ul a {
+.primary_nav_wrap ul a {
 	color: #777;
 	text-decoration: none;
 }
-.sidebar ul li {
+.primary_nav_wrap ul li {
 	position: relative;
 	float: left;
 	margin: 0;
 	padding: 2px 7px 4px;
 }
-.sidebar ul li li {
+.primary_nav_wrap ul li li {
 	padding-top: 0px;
 }
-.sidebar ul li.categories ul {
+.primary_nav_wrap ul li.categories ul {
 	width: 110px;
 }
-.sidebar ul ul.archives {
+.primary_nav_wrap ul ul.archives {
 	width: 120px;
 }
-.sidebar ul ul.wp-tag-cloud {
+.primary_nav_wrap ul ul.wp-tag-cloud {
 	width: 100px;
 }
-.sidebar ul li:hover {
+.primary_nav_wrap ul li:hover {
 	background: #f6f6f6;
 	border-top-left-radius: .3em;
 	border-top-right-radius: .3em;
 	cursor: pointer;
 }
-.sidebar ul ul {
+.primary_nav_wrap ul ul {
 	background: #f6f6f6;
 	border-top-right-radius: .3em;
 	border-bottom-left-radius: .3em;
@@ -322,24 +322,24 @@ header a.post-editlink {
 	margin-left: -179px;
 	width: 255px;
 }
-.sidebar ul ul li {
+.primary_nav_wrap ul ul li {
 	float: none;
 	padding-bottom: 5px;
 }
-.sidebar ul ul a {
+.primary_nav_wrap ul ul a {
 	padding: 0px;
 }
-.sidebar ul ul ul {
+.primary_nav_wrap ul ul ul {
 	top: 0;
 	left: 100%;
 }
-.sidebar ul.children {
+.primary_nav_wrap ul.children {
 	border-radius: 0;
 }
-.sidebar ul li:hover > ul {
+.primary_nav_wrap ul li:hover > ul {
 	display: block;
 }
-.sidebar #searchform {
+.primary_nav_wrap #searchform {
 	position: relative;
 }
 fieldset {
@@ -350,18 +350,17 @@ fieldset {
 	border-radius: 5px;
 	line-height: 1.2em;
 }
-.sidebar #searchform #s {
+.primary_nav_wrap #searchform #s {
 	width: 190px;
 	padding: 3px;
 }
-.sidebar #searchsubmit {
+.primary_nav_wrap #searchsubmit {
 	margin: 4px 0 0 5px;
 	border: none;
 	background: #FFFFFF;
 	border: 1px solid #d2d2d2;
 	border-radius: 5px;
 }
-
 /* comments */
 .comments ul {
 	list-style: none;
