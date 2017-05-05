@@ -266,46 +266,47 @@ header a.post-editlink {
 	position: relative;
 	top: 0;
 }
+
 /* nav menu */
-.primary_nav_wrap {
+.sidebar {
 	margin: 15px 0 0 -8px;
 }
-.primary_nav_wrap ul {
+.sidebar ul {
 	list-style: none;
 	position: relative;
 	float: left;
 	margin: 0;
 	padding: 0;
 }
-.primary_nav_wrap ul a {
+.sidebar ul a {
 	color: #777;
 	text-decoration: none;
 }
-.primary_nav_wrap ul li {
+.sidebar ul li {
 	position: relative;
 	float: left;
 	margin: 0;
 	padding: 2px 7px 4px;
 }
-.primary_nav_wrap ul li li {
+.sidebar ul li li {
 	padding-top: 0px;
 }
-.primary_nav_wrap ul li.categories ul {
+.sidebar ul li.categories ul {
 	width: 110px;
 }
-.primary_nav_wrap ul ul.archives {
+.sidebar ul ul.archives {
 	width: 120px;
 }
-.primary_nav_wrap ul ul.wp-tag-cloud {
+.sidebar ul ul.wp-tag-cloud {
 	width: 100px;
 }
-.primary_nav_wrap ul li:hover {
+.sidebar ul li:hover {
 	background: #f6f6f6;
 	border-top-left-radius: .3em;
 	border-top-right-radius: .3em;
 	cursor: pointer;
 }
-.primary_nav_wrap ul ul {
+.sidebar ul ul {
 	background: #f6f6f6;
 	border-top-right-radius: .3em;
 	border-bottom-left-radius: .3em;
@@ -321,24 +322,24 @@ header a.post-editlink {
 	margin-left: -179px;
 	width: 255px;
 }
-.primary_nav_wrap ul ul li {
+.sidebar ul ul li {
 	float: none;
 	padding-bottom: 5px;
 }
-.primary_nav_wrap ul ul a {
+.sidebar ul ul a {
 	padding: 0px;
 }
-.primary_nav_wrap ul ul ul {
+.sidebar ul ul ul {
 	top: 0;
 	left: 100%;
 }
-.primary_nav_wrap ul.children {
+.sidebar ul.children {
 	border-radius: 0;
 }
-.primary_nav_wrap ul li:hover > ul {
+.sidebar ul li:hover > ul {
 	display: block;
 }
-.primary_nav_wrap #searchform {
+.sidebar #searchform {
 	position: relative;
 }
 fieldset {
@@ -349,17 +350,18 @@ fieldset {
 	border-radius: 5px;
 	line-height: 1.2em;
 }
-.primary_nav_wrap #searchform #s {
+.sidebar #searchform #s {
 	width: 190px;
 	padding: 3px;
 }
-.primary_nav_wrap #searchsubmit {
+.sidebar #searchsubmit {
 	margin: 4px 0 0 5px;
 	border: none;
 	background: #FFFFFF;
 	border: 1px solid #d2d2d2;
 	border-radius: 5px;
 }
+
 /* comments */
 .comments ul {
 	list-style: none;
