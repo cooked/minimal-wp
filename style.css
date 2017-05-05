@@ -195,6 +195,7 @@ header#header {
 	position: fixed;
 	width: 270px;
 }
+
 /* archive */
 body.archive header {
 	float: none;
@@ -208,6 +209,7 @@ body.archive h1.entry-title {
 body.archive h2.entry-title a {
 	font-size: 20px;
 }
+
 /* single */
 .single article h2 {
 	display: none;
@@ -268,9 +270,11 @@ header a.post-editlink {
 }
 
 /* nav menu */
+.sidebar,
 .primary_nav_wrap {
 	margin: 15px 0 0 -8px;
 }
+.sidebar ul,
 .primary_nav_wrap ul {
 	list-style: none;
 	position: relative;
