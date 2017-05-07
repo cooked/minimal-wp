@@ -156,7 +156,11 @@ pre {
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
+
 /* links */
+.more-link {
+	display: none;
+}
 a {
 	color: #39c;
 	text-decoration: none;
