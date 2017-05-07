@@ -276,7 +276,13 @@ header a.post-editlink {
 }
 .sidebar ul {
 	list-style: none;
+	padding: 0 0 0 16px;
+	margin: 0;
 }
+.sidebar ul li {
+	list-style: none;
+}
+
 .primary_nav_wrap ul {
 	list-style: none;
 	position: relative;
