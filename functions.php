@@ -52,7 +52,8 @@ function minimal_wp_filter_title($title) {
 add_filter ( 'wp_title', 'minimal_wp_filter_title' );
 
 function minimal_wp_widgets_init() {
-	register_sidebar( array(
+	register_sidebars(2, 
+	array(
 			'name' 			=> __( 'Sidebar 1', 'minimal_wp' ),
 			'id' 			=> 'sidebar1',
 			'description'   => __( 'sidebar1', 'minimal_wp' ),
@@ -60,8 +61,8 @@ function minimal_wp_widgets_init() {
 			'after_widget' 	=> "</li>",
 			'before_title' 	=> '<h3 class="widget-title">',
 			'after_title' 	=> '</h3>' 
-	) );
-	register_sidebar(array(
+	),
+	array(
 			'name' 			=> __( 'Sidebar 2', 'minimal_wp' ),
 			'id' 			=> 'sidebar2',
 			'description'   => __( 'sidebar2', 'minimal_wp' ),
