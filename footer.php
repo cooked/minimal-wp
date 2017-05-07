@@ -3,7 +3,7 @@
 <footer id="footer" role="contentinfo">
 
 <div class="sidebar" id="sidebar-footer">
-	<?php get_sidebar('sidebar2'); ?>
+	<?php get_sidebar('secondary'); ?>
 </div>
 
 <div id="copyright">

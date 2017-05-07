@@ -22,7 +22,7 @@
 			</section>
 			
 			<div class="sidebar" id="sidebar-header">
-				<?php get_sidebar('sidebar1'); ?>
+				<?php get_sidebar('primary'); ?>
 			</div>
 
 		</header>
