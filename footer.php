@@ -1,6 +1,11 @@
 <div class="clear"></div>
 </div>
 <footer id="footer" role="contentinfo">
+
+<div class="sidebar" id="sidebar-footer">
+	<?php get_sidebar('sidebar2'); ?>
+</div>
+
 <div id="copyright">
 <?php 
 	$minimal_wp_options = get_option( 'minimal_wp_theme_options' );
